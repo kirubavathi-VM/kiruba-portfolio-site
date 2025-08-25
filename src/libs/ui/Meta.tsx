@@ -50,17 +50,7 @@ export const Meta = ({ title, keywords, description }: Metadata) => {
         <link rel="manifest" href="/favicons/site.webmanifest" />
 
         <title>{typeof title === "string" ? title : <>{title}</>}</title>
-
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-        />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
       </Head>
-      <Script
-        src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-        strategy="afterInteractive"
-      />
     </>
   );
 };

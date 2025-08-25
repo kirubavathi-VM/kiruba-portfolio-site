@@ -3,10 +3,11 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { LayoutProps } from "@/types/page";
 import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   useEffect(() => {
-    // @ts-expect-error: AOS is loaded globally from CDN
     if (typeof AOS !== "undefined") AOS.init({ duration: 800, once: true });
   }, []);
 

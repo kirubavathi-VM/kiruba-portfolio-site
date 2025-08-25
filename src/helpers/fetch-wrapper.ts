@@ -18,8 +18,8 @@ const post = async (url: string, init?: RequestInit) => {
   try {
     const response = await fetch(url, requestOptions);
     return handleResponse(response);
-  } catch (err) {
-    console.error(err);
+  } catch (_err) {
+    console.error(_err);
     return Promise.reject("error");
   }
 };

@@ -1,4 +1,5 @@
 import { contactService } from "@/services/contact.service";
+import { ContactFormInputs } from "@/types/contact";
 import Link from "next/link";
 import {
   Button,
@@ -13,9 +14,9 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
-  const { reset, handleSubmit, register } = useForm();
+  const { reset, handleSubmit, register } = useForm<ContactFormInputs>();
 
-  const onSubmit = (data: any) => {
+  const onSubmit = (data: ContactFormInputs) => {
     contactService
       .sendMessage(data)
       .then(() => {
