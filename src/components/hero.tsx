@@ -46,7 +46,7 @@ const Hero = () => {
               data-aos-delay="200"
               data-aos-duration="800"
             >
-              I'm a <span ref={typedRef}></span>
+              I&apos;m a <span ref={typedRef}></span>
             </p>
 
             <div

@@ -27,7 +27,7 @@ const About = () => {
             <div className="about-content">
               <div className="about-info">
                 <p>
-                  I’m Kirubavathi, a passionate <strong>Frontend</strong> and{" "}
+                  I&apos;m Kirubavathi, a passionate <strong>Frontend</strong> and{" "}
                   <strong>Full-Stack Web Developer</strong> specializing in
                   creating dynamic, responsive, and user-friendly interfaces
                   using <strong>React.js, Next.js and Typescript</strong>.
