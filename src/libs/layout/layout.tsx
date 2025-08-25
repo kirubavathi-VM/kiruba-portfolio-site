@@ -5,6 +5,8 @@ import { LayoutProps } from "@/types/page";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   useEffect(() => {
@@ -15,6 +17,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <div className="d-flex flex-column min-vh-100">
       <Header />
       <main className="flex-grow-1">{children}</main>
+      {/* Toast Container */}
+      <ToastContainer position="top-right" theme="dark" />
       <Footer />
       <BackToTop />
     </div>

@@ -10,7 +10,7 @@ import {
   Row,
 } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
@@ -170,9 +170,6 @@ const Contact = () => {
                   Send Message
                 </Button>
               </Form>
-
-              {/* Toast Container */}
-              <ToastContainer position="top-right" theme="dark" />
             </div>
           </Col>
         </Row>
