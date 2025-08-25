@@ -1,5 +1,5 @@
 export const convertBodyJsonStringify = (
-  body: Record<string, unknown> | any[]
+  body: Record<string, unknown> | unknown[]
 ) => {
   return JSON.stringify(body);
 };
