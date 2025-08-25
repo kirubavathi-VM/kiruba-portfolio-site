@@ -17,7 +17,7 @@ const About = () => {
 
       <Container>
         <Row className="gy-4">
-          {/* about me */}
+          {/* about me  */}
           <Col
             lg={7}
             data-aos="fade-right"

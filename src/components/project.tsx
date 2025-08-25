@@ -34,7 +34,7 @@ const Projects = () => {
           <span className="description-title">Projects</span>
           <h2>Projects</h2>
           <p>
-            Here are some of the projects I've worked on that showcase my skills
+            Here are some of the projects I&apos;ve worked on that showcase my skills
             in frontend and backend development. Each project reflects my
             dedication to creating user-friendly and efficient applications.
           </p>

@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   useEffect(() => {
-    // @ts-ignore for global AOS from CDN
+    // @ts-expect-error: AOS is loaded globally from CDN
     if (typeof AOS !== "undefined") AOS.init({ duration: 800, once: true });
   }, []);
 

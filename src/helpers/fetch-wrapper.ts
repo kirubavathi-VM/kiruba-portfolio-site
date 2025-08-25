@@ -1,4 +1,6 @@
-export const convertBodyJsonStringify = (body: any) => {
+export const convertBodyJsonStringify = (
+  body: Record<string, unknown> | any[]
+) => {
   return JSON.stringify(body);
 };
 
@@ -17,6 +19,7 @@ const post = async (url: string, init?: RequestInit) => {
     const response = await fetch(url, requestOptions);
     return handleResponse(response);
   } catch (err) {
+    console.error(err);
     return Promise.reject("error");
   }
 };
