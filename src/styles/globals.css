@@ -777,7 +777,7 @@ h6 {
   gap: 1.25rem;
 }
 
-.project-button .primary-btn {
+.project-button .link-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -785,22 +785,22 @@ h6 {
   color: var(--contrast-color);
   padding: 0.5rem 1rem;
   font-weight: 600;
+  border-radius: 6px;
   transition: all 0.3s ease;
-  border: none;
 }
 
-.project-button .primary-btn i {
+.project-button .link-btn i {
   margin-left: 8px;
   font-size: 1.09rem !important;
   transition: transform 0.3s ease;
 }
 
-.project-button .primary-btn:hover {
+.project-button .link-btn:hover {
   transform: translateY(-3px) !important;
   box-shadow: 0 10px 20px color-mix(in srgb, var(--accent-color), transparent 75%) !important;
 }
 
-.project-button .primary-btn:hover i {
+.project-button .link-btn:hover i {
   transform: translateX(4px);
 }
 

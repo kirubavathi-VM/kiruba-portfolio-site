@@ -1,4 +1,5 @@
-import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import Link from "next/link";
+import { Card, Col, Container, Row } from "react-bootstrap";
 
 const projectsData = [
   {
@@ -34,8 +35,8 @@ const Projects = () => {
           <span className="description-title">Projects</span>
           <h2>Projects</h2>
           <p>
-            Here are some of the projects I&apos;ve worked on that showcase my skills
-            in frontend and backend development. Each project reflects my
+            Here are some of the projects I&apos;ve worked on that showcase my
+            skills in frontend and backend development. Each project reflects my
             dedication to creating user-friendly and efficient applications.
           </p>
         </div>
@@ -49,7 +50,7 @@ const Projects = () => {
               lg={4}
               md={6}
               data-aos="fade-up"
-              data-aos-delay={200 + index * 100} 
+              data-aos-delay={200 + index * 100}
               data-aos-duration="800"
             >
               <div className="project-card">
@@ -62,14 +63,14 @@ const Projects = () => {
                   <h3>{project.title}</h3>
                   <p>{project.desc}</p>
                   <div className="project-button">
-                    <Button
-                      className="primary-btn"
+                    <Link
+                      className="link-btn"
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       View Project <i className="bi bi-link-45deg"></i>
-                    </Button>
+                    </Link>
                   </div>
                 </div>
               </div>
