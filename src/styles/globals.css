@@ -86,7 +86,6 @@ h6 {
 # Scroll Top Button
 --------------------------------------------------------------*/
 .backToTop {
-  position: fixed;
   right: 15px;
   bottom: 15px;
   z-index: 99999;
@@ -183,13 +182,8 @@ h6 {
 }
 
 .copyright {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 25px 0;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-}
-
-.copyright p {
-  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
@@ -201,7 +195,6 @@ h6 {
   color: var(--contrast-color);
   border-radius: 20px;
   padding: 40px 30px;
-  height: 100%;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
@@ -209,9 +202,6 @@ h6 {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 20px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
   backdrop-filter: blur(5px);
   transition: all 0.3s ease;
 }
@@ -224,12 +214,8 @@ h6 {
 .info-card .icon-container {
   width: 45px;
   height: 45px;
-  flex-shrink: 0;
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .info-card .icon-container i {
@@ -246,7 +232,6 @@ h6 {
 
 .info-card .card-content p {
   font-size: 14px;
-  margin-bottom: 0;
   opacity: 0.8;
   color: var(--contrast-color) !important;
 }
@@ -262,15 +247,7 @@ h6 {
   color: var(--contrast-color);
 }
 
-.social-links-panel .social-icons {
-  display: flex;
-  gap: 12px;
-}
-
 .social-links-panel .social-icons a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 42px;
   height: 42px;
   border-radius: 50%;
@@ -297,15 +274,11 @@ h6 {
       var(--accent-color),
       color-mix(in srgb, var(--accent-color), #1a4372 30%)) !important;
   color: var(--contrast-color);
-  border: none !important;
   padding: 15px 25px !important;
   border-radius: 12px !important;
   font-weight: 600 !important;
   font-size: 16px !important;
   transition: all 0.3s ease !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center;
 }
 
 .contact-btn-submit:hover {
@@ -468,7 +441,7 @@ h6 {
   .mobile-nav-toggle {
     color: var(--nav-color);
     position: fixed;
-    top: 20px;
+    top: 18.5px;
     right: 20px;
     font-size: 28px;
     line-height: 0;
@@ -824,7 +797,7 @@ h6 {
 
 .project-button .primary-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px color-mix(in srgb, var(--accent-color), transparent 80%);
+  box-shadow: 0 10px 20px color-mix(in srgb, var(--accent-color), transparent 80%) !important;
 }
 
 .project-button .primary-button:hover i {
@@ -845,24 +818,17 @@ h6 {
 }
 
 .education-card {
-  border: none;
   background: color-mix(in srgb, var(--surface-color), transparent 50%);
   backdrop-filter: blur(8px);
   padding: 20px;
-  display: flex;
-  align-items: flex-start;
   border-left: 3px solid var(--accent-color);
 }
 
 .education-card .icon-box {
   width: 50px;
   height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 12px;
   background: color-mix(in srgb, var(--accent-color), transparent 92%);
-  flex-shrink: 0;
 }
 
 .icon-box .icon {
@@ -917,9 +883,6 @@ h6 {
 }
 
 .experience-cards .experience-card .card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   margin-bottom: 1rem;
 }
 

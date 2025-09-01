@@ -29,7 +29,7 @@ const BackToTop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className="btn btn-primary d-flex align-items-center justify-content-center backToTop"
+      className="btn btn-primary d-flex align-items-center justify-content-center backToTop position-fixed"
     >
       <i className="bi bi-arrow-up-short"></i>
     </button>

@@ -27,8 +27,8 @@ const About = () => {
             <div className="about-content">
               <div className="about-info">
                 <p>
-                  I&apos;m Kirubavathi, a passionate <strong>Frontend</strong> and{" "}
-                  <strong>Full-Stack Web Developer</strong> specializing in
+                  I&apos;m Kirubavathi, a passionate <strong>Frontend</strong>{" "}
+                  and <strong>Full-Stack Web Developer</strong> specializing in
                   creating dynamic, responsive, and user-friendly interfaces
                   using <strong>React.js, Next.js and Typescript</strong>.
                 </p>
@@ -52,8 +52,8 @@ const About = () => {
             data-aos-delay="300"
             data-aos-duration="800"
           >
-            <div className="education-card d-flex align-items-start">
-              <div className="icon-box">
+            <div className="education-card d-flex align-items-start border-none">
+              <div className="icon-box d-flex align-items-center justify-content-center flex-shrink-0">
                 <i className="bi bi-mortarboard icon"></i>
               </div>
               <div className="ms-3">
