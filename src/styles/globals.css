@@ -375,7 +375,7 @@ h6 {
 
 @media (max-width: 1200px) {
   .header {
-    padding-top: 10px;
+    padding-top: 10px !important;
   }
 
   .header-container {
@@ -736,7 +736,7 @@ h6 {
 
 .project-card-inner:hover {
   transform: translateY(-10px);
-  box-shadow: -4px 4px 8px color-mix(in srgb, var(--accent-color), transparent 80%);
+  box-shadow: 0 8px 30px color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 .project-card-inner h3 {
@@ -777,7 +777,7 @@ h6 {
   gap: 1.25rem;
 }
 
-.project-button .primary-button {
+.project-button .primary-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -789,18 +789,18 @@ h6 {
   border: none;
 }
 
-.project-button .primary-button i {
+.project-button .primary-btn i {
   margin-left: 8px;
   font-size: 1.09rem !important;
   transition: transform 0.3s ease;
 }
 
-.project-button .primary-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px color-mix(in srgb, var(--accent-color), transparent 80%) !important;
+.project-button .primary-btn:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 10px 20px color-mix(in srgb, var(--accent-color), transparent 75%) !important;
 }
 
-.project-button .primary-button:hover i {
+.project-button .primary-btn:hover i {
   transform: translateX(4px);
 }
 

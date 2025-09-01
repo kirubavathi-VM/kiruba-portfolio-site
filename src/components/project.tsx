@@ -63,7 +63,7 @@ const Projects = () => {
                   <p>{project.desc}</p>
                   <div className="project-button">
                     <Button
-                      className="primary-button"
+                      className="primary-btn"
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
